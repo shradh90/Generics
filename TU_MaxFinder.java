@@ -4,31 +4,14 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
 public class TU_MaxFinder {
-    //Max Number in the First position
     @Test
-    void whenInteger1ShouldReturnMax() {
-        Integer int1 = 11, int2 = 1, int3 = 6;
-        Integer max = MaxFinder.findMax(int1, int2, int3);
+    void whenIntegerShouldReturnMax() {
+        Float a = 30.5f,b = 20.5f, c = 30.6f;
+        Float max = MaxFinder.findMax(a, b, c);
 
-        Assertions.assertEquals(11, max, "Validating max method");
+        // Checking whether test code is passing test case or not
+        Assertions.assertEquals(30.6f,max,"Validating Max Method");
     }
 
-    // Max Number in the Second position
-    @Test
-    void whenInteger2ShouldReturnMax() {
-        Integer int1 = 1, int2 = 11, int3 = 6;
-        Integer max = MaxFinder.findMax(int1, int2, int3);
-
-        Assertions.assertEquals(11, max, "Validating max method");
-    }
-
-    // Max Number in the Third position
-    @Test
-    void whenInteger3ShouldReturnMax() {
-        Integer int1 = 12, int2 = 89, int3 = 40;
-        Integer max = MaxFinder.findMax(int1, int2, int3);
-
-        Assertions.assertEquals(11, max, "Validating max method");
-    }
 
 }
